@@ -6,9 +6,11 @@ function AddTodoForm({ setTodos, categories }) {
   const [category, setCategory] = useState(categories[0]);
 
   const handleAdd = () => {
-    if (!text) return;
-
-    const newTodo = { id: Date.now(), text, category, completed: false };
+      if (!text.trim()) {
+      toast.error("Task cannot be empty");
+      return;
+      }
+    const newTodo = { id: crypto.randomUUID(), text, category, completed: false };
 
     setTodos(prevTodos => [...prevTodos, newTodo]);
 

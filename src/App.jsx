@@ -46,9 +46,9 @@ function App() {
         setFilterCategory={setFilterCategory}
       />
 
-      <AddTodoForm todos={todos} setTodos={setTodos} categories={categories} toast={toast} />
+      <AddTodoForm todos={todos} setTodos={setTodos} categories={categories} />
 
-      <TodoList todos={filteredTodos} setTodos={setTodos} toast={toast} />
+      <TodoList todos={filteredTodos} setTodos={setTodos} />
 
       <ToastContainer
         position="top-right"
