@@ -1,0 +1,9 @@
+
+.container {
+   display: flex;
+  flex-direction: column;
+  justify-content: center;   /* מרכז אנכית */
+  align-items: center;       /* מרכז אופקית */
+  min-height: 100vh;         /* גובה מלא */
+  gap: 20px;
+}
